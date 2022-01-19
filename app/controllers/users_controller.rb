@@ -6,7 +6,6 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      # ここに処理を書いていきます。
     else
       render :new
     end
